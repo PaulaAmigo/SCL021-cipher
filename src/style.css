@@ -1,0 +1,50 @@
+:root {
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.wallpapersafari.com/64/25/T8nbhU.jpg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+body{
+    height: 100vh;
+    color:#44474a;
+}
+.titulo{
+    text-align: center;
+}
+img{
+    border-radius: 40ch;
+}
+.label1{
+    letter-spacing: 5px;
+}
+.cuadro{
+    width:450px;
+    height:200px;
+    border-radius: 6px;
+}
+form{
+    padding:6px 30px;
+    color:#44474a;
+    text-align: center;
+    border-radius: 1ch;
+    position:relative;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.button {
+    ox-shadow:inset 0px 0px 0px 0px #dcecfb;
+	background-color: rgb(235, 237, 239);
+	border-radius:5px;
+	border:0.5px none #bccfe1;
+	display:inline-block;
+	cursor:pointer;
+	padding:6px 24px;
+	text-decoration:none;
+  position:relative;
+	border:solid;
+  margin:10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.button:hover{
+    background-color: rgb(240, 136, 153);
+}
