@@ -1,6 +1,6 @@
 :root {
     background-repeat: no-repeat;
-    background-image: url(https://cdn.wallpapersafari.com/64/25/T8nbhU.jpg);
+    background-image: url(https://fondosmil.com/fondo/460.png);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
@@ -17,10 +17,22 @@ img{
 .label1{
     letter-spacing: 5px;
 }
-.cuadro{
+.input{
+   width: 50px;
+   height: 20px; 
+}
+.cuadro1{
+    text-transform: uppercase;
     width:450px;
     height:200px;
     border-radius: 6px;
+    border:#44474a
+}
+.cuadro2{
+    width:450px;
+    height:200px;
+    border-radius: 6px;
+    border: #44474a;
 }
 form{
     padding:6px 30px;
@@ -32,8 +44,8 @@ form{
 }
 
 .button {
-    ox-shadow:inset 0px 0px 0px 0px #dcecfb;
-	background-color: rgb(235, 237, 239);
+    box-shadow:inset 0px 0px 0px 0px #dcecfb;
+	background-color: transparent;
 	border-radius:5px;
 	border:0.5px none #bccfe1;
 	display:inline-block;
@@ -44,7 +56,8 @@ form{
 	border:solid;
   margin:10px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
 }
 .button:hover{
-    background-color: rgb(240, 136, 153);
+    background-color: rgba(237, 241, 246, 0.779);
 }
