@@ -1,5 +1,6 @@
 const cipher = {
-  encode: function (mensajeOriginal, shiftInput) {
+  encode: function (offset, mensajeOriginal) {
+   
     let mensajeFinal = "";
     
     for(let i = 0; i< mensajeOriginal.length; i++) {
@@ -7,38 +8,32 @@ const cipher = {
      
     
      if(ascii_num >=65 && ascii_num <=90){
-         let sum = (ascii_num - 65 + parseInt(shiftInput))%26 + 65;
+         let sum = (ascii_num - 65 + parseInt(offset))%26 + 65;
      
-         console.log(sum)
          mensajeFinal +=String.fromCharCode(sum)
+         
      }
      else{
          mensajeFinal += mensajeOriginal[i]
-         console.log(mensajeFinal)
      }
- 
-     console.log(mensajeFinal)
  }
  return mensajeFinal
 },
-decode: function (mensajeOriginal, shiftInput) {
+decode: function (offset, mensajeOriginal) {
+   
   let mensajeFinal = "";
   for(let i = 0; i< mensajeOriginal.length; i++) {
       let ascii_num = mensajeOriginal[i].charCodeAt()
       
      
       if(ascii_num >=65 && ascii_num <=90){
-          let sum = (ascii_num - 65 - parseInt(shiftInput))%26 + 65;
-      
-          console.log(sum)
+          let sum = (ascii_num + 65 - parseInt(offset))%26 + 65;
+
           mensajeFinal +=String.fromCharCode(sum)
       }
       else{
-          mensajeFinal += mensajeOriginal[i]
-          console.log(mensajeFinal)
+          mensajeFinal += mensajeOriginal[i]  
       }
-  
-      console.log(mensajeFinal)
   }
   return mensajeFinal 
 }
