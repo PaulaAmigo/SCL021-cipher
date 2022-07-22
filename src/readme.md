@@ -7,7 +7,7 @@
 - Para que la persona que reciba el mensaje y lo puedo descifrar, debes indicar cuantos espacios moviste tu texto y asi el pueda ver el mensaje secreto.
 
 ## Prototipo en papel
-![](src/"prototipo cipher".jpg)
-- Mi prototi´po fue diseñado a mano. 
+
+- Mi prototipo fue diseñado a mano. 
 
 
