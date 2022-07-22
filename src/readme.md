@@ -1,5 +1,13 @@
-Cifrado Cesar:
+# Cifrado Cesar
+- Este cifrado va dirigido a todo tipo de personas quienes quieras enviar mensajes secretos a otras, ya sea para enviar mensajes atraves de correo o RRSS. 
 
-Este es un diseño minimaista, sencillo y cómodo a la vista del usuario, para que sea fácil de entender a quien ingrese a la página. Decidí hacerlo todo en un solo HTML para un diseño mas simple, pero agregé hartos detalles de diseño en CSS.
-Esta es una aplicación para todo tipo de personas, para aquellos que quieran enviar mensajes secretos, en donde el usuario pueda enviar un mensaje cifrado a un amigo, familiar, pareja, etc, y esta lo pueda decifrar entrando al link de la página e indicando el número de espacios para decifrar el mensaje recibido.
+
+## Como usarlo
+- Para poder usarlo debes ingresar a la página web, posicionarte el el primero recuadro e ingresar el texto que quieras decifrar, luego debes darle los espacios que quiras que tu texto se mueva dentro del alfabeto, y darle a la opción "cifrar", luego en el recuadro de resultado, recibirás tu mensaje cifrado y isto para enviar.
+- Para que la persona que reciba el mensaje y lo puedo descifrar, debes indicar cuantos espacios moviste tu texto y asi el pueda ver el mensaje secreto.
+
+## Prototipo en papel
+![](src/"prototipo cipher".jpg)
+- Mi prototi´po fue diseñado a mano. 
+
 

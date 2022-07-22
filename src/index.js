@@ -1,25 +1,27 @@
-import cipher from './cipher.js';
+import cipher from "./cipher.js";
+window.cipher = cipher
+const botonCifrar = document.getElementById("encode");
 
-//console.log(cipher);
+const botonDescifrar = document.getElementById("decode");
 
-//let mensajeFinal = document.getElementById("texto2")
+botonCifrar.addEventListener("click", seleccionar);
+function seleccionar() {
+  let mensajeOriginal = document.getElementById("texto1").value.toUpperCase();
+  let input = document.getElementById("offset").value;
 
-const botonCifrar = document.getElementById("encode")
+  document.getElementById("texto2").value = cipher.encode(
+    input,
+    mensajeOriginal
+  );
+}
 
-const botonDescifrar = document.getElementById("decode")
+botonDescifrar.addEventListener("click", presionar);
+function presionar() {
+  let mensajeOriginal = document.getElementById("texto1").value.toUpperCase();
+  let input = document.getElementById("offset").value;
 
-botonCifrar.addEventListener("click", seleccionar)
-function seleccionar(){ 
-    let mensajeOriginal = document.getElementById("texto1").value.toUpperCase();
-    let input = document.getElementById("offset").value;
-    
-    document.getElementById("texto2").value = cipher.encode(input, mensajeOriginal);
-    }
-
-botonDescifrar.addEventListener("click", presionar)
-function presionar (){
-    let mensajeOriginal = document.getElementById("texto1").value.toUpperCase();
-    let input = document.getElementById("offset").value;
-
-    document.getElementById("texto2").value = cipher.decode(input, mensajeOriginal);
+  document.getElementById("texto2").value = cipher.decode(
+    input,
+    mensajeOriginal
+  );
 }
