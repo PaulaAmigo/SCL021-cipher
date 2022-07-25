@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cifrado de Cesar</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="imagen1" style="text-align: center">
+        <img
+          src="https://image.shutterstock.com/image-photo/image-260nw-748703671.jpg"
+          width="200"
+          height="200"
+        />
+      </div>
+
+      <h1 class="titulo">¡Bienvenido al Cifrado de Cesar!</h1>
+
+      <br />
+      <h2 class="titulo">Cifremos o descifremos</h2>
+      <h2 class="titulo">¡Tú decides!</h2>
+
+      <br />
+      <label class="label1">¡Comencemos!</label>
+      <br />
+      <br />
+      <input
+        class="cuadro1"
+        type="text"
+        id="texto1"
+        name="texto"
+        placeholder="Ingrese texto..."
+        autocomplete="off"
+        spellcheck="false"
+      />
+
+      <br />
+      <br />
+      <input type="number" class="input" id="offset" min="0" max="35" />
+      <br />
+
+      <br />
+      <button id="encode" class="button" value="enviar">Cifrar</button>
+      <button id="decode" class="button" value="enviar">Descifrar</button>
+      <br />
+      <br />
+      <form>
+        <label class="label2">Respuesta</label>
+        <br />
+        <br />
+        <input
+          class="cuadro2"
+          type="text"
+          id="texto2"
+          name="texto"
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </form>
+    </div>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
