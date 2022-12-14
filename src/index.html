@@ -6,60 +6,79 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
+  <header></header>
   <body>
     <div id="root">
-      <div class="imagen1" style="text-align: center">
+      <div class="inicio" id="inicio">
         <img
-          src="https://image.shutterstock.com/image-photo/image-260nw-748703671.jpg"
+          class="logo"
+          src="https://static.thenounproject.com/png/3085845-200.png"
           width="200"
           height="200"
         />
+        <div class="head">
+          <div class="titulo"><h1>¡Bienvenido al Cifrado de Cesar!</h1></div>
+          <div class="botones">
+            <button class="queEs">¿Qué es?</button>
+            <dialog class="popup1" id="popup1">
+              <p>
+                Código Cesar fue creado para enviar mensajes secretos. En esta
+                página podrás crear tus propios mensajes secretos, o
+                constraseñas seguras.
+              </p>
+              <button class="entendido">Entendido</button>
+            </dialog>
+            <button class="comoFunciona">¿Cómo funciona?</button>
+            <dialog class="popup2" id="popup2">
+              <p>
+                Ingresa el texto que deseas cifrar, elige cuantos espacios
+                quieres que las letras se muevan en el alfabeto, y dale “click”
+                en Cifrar. Si quieres descifrar un mensaje, debes saber cuantos
+                espacios este se movio en el alfabeto, copiar el mensaje y darle
+                “click” en descifrar.
+              </p>
+              <button class="vamos">Vamos a cifrar/descifrar</button>
+            </dialog>
+          </div>
+        </div>
       </div>
 
-      <h1 class="titulo">¡Bienvenido al Cifrado de Cesar!</h1>
+      <div class="cuadros">
+        <div class="uno">
+          <label class="label1">Comencemos</label>
 
-      <br />
-      <h2 class="titulo">Cifremos o descifremos</h2>
-      <h2 class="titulo">¡Tú decides!</h2>
+          <input
+            class="cuadro1"
+            type="text"
+            id="texto1"
+            name="texto"
+            placeholder="Ingrese texto..."
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+        <div class="dos">
+          <label class="label2">Respuesta</label>
 
-      <br />
-      <label class="label1">¡Comencemos!</label>
-      <br />
-      <br />
-      <input
-        class="cuadro1"
-        type="text"
-        id="texto1"
-        name="texto"
-        placeholder="Ingrese texto..."
-        autocomplete="off"
-        spellcheck="false"
-      />
-
-      <br />
-      <br />
-      <input type="number" class="input" id="offset" min="0" max="35" />
-      <br />
-
-      <br />
-      <button id="encode" class="button" value="enviar">Cifrar</button>
-      <button id="decode" class="button" value="enviar">Descifrar</button>
-      <br />
-      <br />
-      <form>
-        <label class="label2">Respuesta</label>
-        <br />
-        <br />
-        <input
-          class="cuadro2"
-          type="text"
-          id="texto2"
-          name="texto"
-          autocomplete="off"
-          spellcheck="false"
-        />
-      </form>
+          <input
+            class="cuadro2"
+            type="text"
+            id="texto2"
+            name="texto"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+      </div>
+      <div class="tres">
+        <input type="number" class="input" id="offset" min="0" max="35" />
+        <div class="buttons">
+          <button id="encode" class="button" value="enviar">Cifrar</button>
+          <button id="decode" class="button" value="enviar">Descifrar</button>
+        </div>
+      </div>
     </div>
+    <footer></footer>
 
     <script src="index.js" type="module"></script>
   </body>
